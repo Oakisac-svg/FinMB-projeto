@@ -5,23 +5,23 @@ import { SectionHeading } from "@/components/landing/section-heading";
 const features = [
   {
     icon: Bot,
-    title: "FinBot IA",
-    text: "Pergunte sobre gastos, habitos, metas e rotina. O assistente responde com contexto, nao com frases genericas.",
+    title: "FinBot do FinMB",
+    text: "Pergunte sobre gastos, habitos, metas e rotina. O FinMB responde com contexto, nao com frases genericas.",
   },
   {
     icon: CircleDollarSign,
     title: "Controle Financeiro",
-    text: "Receitas, despesas, categorias, metas e saldo em uma experiencia limpa, pensada para decisao rapida.",
+    text: "Com o FinMB, receitas, despesas, categorias, metas e saldo vivem em uma experiencia limpa, pensada para decisao rapida.",
   },
   {
     icon: CalendarCheck,
     title: "Rotina",
-    text: "Habitos, tarefas e calendario conectados para mostrar como seu tempo influencia seus resultados.",
+    text: "O FinMB conecta habitos, tarefas e calendario para mostrar como seu tempo influencia seus resultados.",
   },
   {
     icon: Salad,
     title: "Nutricao",
-    text: "Refeicoes, calorias e macros organizados junto da sua rotina para criar consistencia sem friccao.",
+    text: "O FinMB organiza refeicoes, calorias e macros junto da sua rotina para criar consistencia sem friccao.",
   },
 ] as const;
 
@@ -32,8 +32,8 @@ export function Features() {
         <SectionHeading
           center
           eyebrow="Recursos"
-          title="Um assistente para toda sua vida."
-          text="O FinMb une as areas que normalmente ficam separadas e revela as relacoes entre dinheiro, tempo, alimentacao e objetivos."
+          title="O FinMB conecta toda sua vida."
+          text="O FinMB une as areas que normalmente ficam separadas e revela as relacoes entre dinheiro, tempo, alimentacao e objetivos."
         />
         <div className="mt-16 grid gap-4 md:grid-cols-2">
           {features.map(({ icon: Icon, title, text }, index) => (

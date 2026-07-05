@@ -9,8 +9,8 @@ export function DashboardShowcase() {
         <SectionHeading
           center
           eyebrow="Dashboard"
-          title="Tudo importante na mesma tela."
-          text="Uma experiencia premium para acompanhar financeiro, rotina, metas, calendario e alimentacao sem parecer um painel antigo."
+          title="O FinMB coloca tudo importante na mesma tela."
+          text="Uma experiencia premium do FinMB para acompanhar financeiro, rotina, metas, calendario e alimentacao sem parecer um painel antigo."
         />
         <div className="mt-16 grid gap-4 lg:grid-cols-[1.2fr_.8fr]">
           <div className="premium-card rounded-[34px] border border-white/10 bg-white/[.045] p-5 backdrop-blur-xl">
@@ -46,9 +46,9 @@ export function DashboardShowcase() {
             </div>
           </div>
           <div className="grid gap-4">
-            <MiniPanel icon={Goal} title="Metas" text="Reserva de emergencia chegou a 72%." />
-            <MiniPanel icon={CalendarDays} title="Calendario" text="5 tarefas importantes antes de sexta." />
-            <MiniPanel icon={BarChart3} title="Insights" text="Dias com refeicao planejada reduziram gastos em 21%." />
+            <MiniPanel icon={Goal} title="Metas" text="O FinMB mostra sua reserva de emergencia em 72%." />
+            <MiniPanel icon={CalendarDays} title="Calendario" text="O FinMB destaca 5 tarefas importantes antes de sexta." />
+            <MiniPanel icon={BarChart3} title="Insights" text="O FinMB identifica que refeicoes planejadas reduziram gastos em 21%." />
           </div>
         </div>
       </Reveal>

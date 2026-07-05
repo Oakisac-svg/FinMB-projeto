@@ -3,9 +3,9 @@ import { Reveal } from "@/components/landing/landing-motion";
 import { SectionHeading } from "@/components/landing/section-heading";
 
 const steps = [
-  ["01", "Conecte", "Registre ou conecte informacoes de financas, rotina e alimentacao em poucos minutos.", PlugZap],
-  ["02", "Organize", "O FinMb transforma dados soltos em uma visao clara, bonita e acionavel.", Sparkles],
-  ["03", "Evolua", "Use Life Score e FinBot para melhorar suas decisoes semana apos semana.", TrendingUp],
+  ["01", "Conecte", "Leve para o FinMB suas informacoes de financas, rotina e alimentacao em poucos minutos.", PlugZap],
+  ["02", "Organize", "O FinMB transforma dados soltos em uma visao clara, bonita e acionavel.", Sparkles],
+  ["03", "Evolua", "Com Life Score e FinBot, o FinMB melhora suas decisoes semana apos semana.", TrendingUp],
 ] as const;
 
 export function HowItWorks() {
@@ -16,7 +16,7 @@ export function HowItWorks() {
           center
           eyebrow="Como funciona"
           title="Tres passos para sair do caos."
-          text="A experiencia foi pensada para comecar simples e ficar mais poderosa conforme sua vida ganha contexto."
+          text="O FinMB comeca simples e fica mais poderoso conforme sua vida ganha contexto."
         />
         <div className="mt-16 grid gap-4 lg:grid-cols-3">
           {steps.map(([number, title, text, Icon], index) => (

@@ -20,17 +20,17 @@ export function Hero() {
           <HeroItem index={0}>
             <div className="inline-flex items-center gap-2 rounded-full border border-gold-400/25 bg-gold-400/10 px-4 py-2 text-xs font-semibold text-gold-300 backdrop-blur-xl">
               <Sparkles className="size-3.5" />
-              IA premium para Open Finance e organizacao de vida
+              FinMB premium para Open Finance e organizacao de vida
             </div>
           </HeroItem>
           <HeroItem index={1}>
             <h1 className="mt-8 max-w-5xl font-display text-5xl font-semibold leading-[0.98] tracking-tight text-white sm:text-6xl lg:text-7xl xl:text-[88px]">
-              A IA que organiza sua vida financeira, rotina e alimentacao em um so lugar.
+              O FinMB organiza sua vida financeira, rotina e alimentacao em um so lugar.
             </h1>
           </HeroItem>
           <HeroItem index={2}>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-zinc-400 sm:text-xl">
-              O FinMb transforma dados do dia a dia em clareza: dinheiro, habitos, refeicoes, metas e insights conectados por um assistente inteligente.
+              O FinMB transforma dados do dia a dia em clareza: dinheiro, habitos, refeicoes, metas e insights conectados em uma experiencia premium.
             </p>
           </HeroItem>
           <HeroItem index={3} className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -55,7 +55,7 @@ export function Hero() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold-300">FinBot</p>
-                  <p className="mt-1 text-lg font-semibold">Life Assistant</p>
+                  <p className="mt-1 text-lg font-semibold">FinMB Life</p>
                 </div>
                 <span className="grid size-10 place-items-center rounded-2xl bg-gold-400 text-black">
                   <Bot className="size-5" />
@@ -63,14 +63,14 @@ export function Hero() {
               </div>
               <div className="mt-8 space-y-4">
                 <ChatBubble text="Quanto economizei este mes?" align="right" />
-                <ChatBubble text="Voce economizou R$ 420 e manteve 82% dos habitos nos dias com menor gasto." />
+                <ChatBubble text="O FinMB mostra que voce economizou R$ 420 e manteve 82% dos habitos nos dias com menor gasto." />
                 <ChatBubble text="Como melhorar meu Life Score?" align="right" />
                 <div className="rounded-3xl rounded-bl-md border border-gold-400/20 bg-gold-400/10 p-4 text-sm leading-6 text-gold-50">
-                  <TypingText text="Priorize 2 metas: reduzir delivery em 18% e planejar 4 refeicoes na semana." />
+                  <TypingText text="O FinMB recomenda 2 metas: reduzir delivery em 18% e planejar 4 refeicoes na semana." />
                 </div>
               </div>
               <div className="absolute bottom-8 left-8 right-8 rounded-2xl border border-white/10 bg-white/[.04] px-4 py-3 text-sm text-zinc-500">
-                Pergunte sobre seu dinheiro...
+                Converse com o FinMB sobre seu dinheiro...
               </div>
             </div>
           </div>

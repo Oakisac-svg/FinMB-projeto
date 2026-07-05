@@ -5,7 +5,7 @@ const items = [
   ["100%", "Dados seguros", ShieldCheck],
   ["Open Finance", "Pronto para conexoes", Unplug],
   ["Criptografia", "Camada de confianca", LockKeyhole],
-  ["IA Inteligente", "Insights contextuais", BrainCircuit],
+  ["FinMB analisa", "Insights contextuais", BrainCircuit],
   ["Tudo em um", "Vida organizada", Sparkles],
 ] as const;
 

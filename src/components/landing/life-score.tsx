@@ -17,11 +17,11 @@ export function LifeScore() {
         <div>
           <SectionHeading
             eyebrow="Life Score"
-            title="Uma nota para enxergar o todo."
-            text="O Life Score combina organizacao financeira, rotina, alimentacao e metas em uma visao simples de acompanhar todos os dias."
+            title="O FinMB mostra o todo em uma nota."
+            text="Com o Life Score, o FinMB combina organizacao financeira, rotina, alimentacao e metas em uma visao simples de acompanhar todos os dias."
           />
           <div className="mt-8 rounded-[24px] border border-gold-400/18 bg-gold-400/[.07] p-5 text-sm leading-7 text-zinc-300">
-            Ele nao cobra perfeicao. Ele mostra consistencia, revela gargalos e ajuda voce a decidir o proximo passo com clareza.
+            O FinMB nao cobra perfeicao. Ele mostra consistencia, revela gargalos e ajuda voce a decidir o proximo passo com clareza.
           </div>
         </div>
 

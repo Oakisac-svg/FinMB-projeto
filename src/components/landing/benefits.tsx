@@ -3,12 +3,12 @@ import { Reveal } from "@/components/landing/landing-motion";
 import { SectionHeading } from "@/components/landing/section-heading";
 
 const benefits = [
-  ["Economize dinheiro", "Veja onde seu dinheiro escapa e transforme padroes em decisao.", Banknote],
-  ["Melhore habitos", "Acompanhe consistencia sem transformar sua rotina em pressao.", CheckCircle2],
-  ["Planeje refeicoes", "Organize calorias, macros e horarios no contexto do seu dia.", Salad],
-  ["Organize tarefas", "Priorize o que importa e entenda o impacto no seu progresso.", CalendarCheck],
-  ["Acompanhe metas", "Metas financeiras e pessoais deixam de ficar soltas.", Goal],
-  ["Tudo em um lugar", "Menos planilhas, menos abas, mais clareza para agir.", Sparkles],
+  ["Economize dinheiro", "O FinMB mostra onde seu dinheiro escapa e transforma padroes em decisao.", Banknote],
+  ["Melhore habitos", "O FinMB acompanha consistencia sem transformar sua rotina em pressao.", CheckCircle2],
+  ["Planeje refeicoes", "Com o FinMB, calorias, macros e horarios entram no contexto do seu dia.", Salad],
+  ["Organize tarefas", "O FinMB ajuda voce a priorizar o que importa e entender o impacto no progresso.", CalendarCheck],
+  ["Acompanhe metas", "Com o FinMB, metas financeiras e pessoais deixam de ficar soltas.", Goal],
+  ["Tudo em um lugar", "O FinMB reduz planilhas, abas e dispersao para dar mais clareza.", Sparkles],
 ] as const;
 
 export function Benefits() {
@@ -19,7 +19,7 @@ export function Benefits() {
           center
           eyebrow="Beneficios"
           title="Menos dispersao. Mais direcao."
-          text="O FinMb foi desenhado para quem quer organizar a vida com elegancia, contexto e uma camada real de inteligencia."
+          text="O FinMB foi desenhado para quem quer organizar a vida com elegancia, contexto e clareza sofisticada."
         />
         <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {benefits.map(([title, text, Icon], index) => (

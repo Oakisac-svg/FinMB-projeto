@@ -8,21 +8,21 @@ const plans = [
   {
     name: "Free",
     price: "R$ 0",
-    description: "Para comecar a organizar o essencial.",
+    description: "Para comecar com o FinMB e organizar o essencial.",
     highlighted: false,
     items: ["Controle financeiro basico", "Habitos e tarefas iniciais", "Registro de refeicoes", "Life Score basico"],
   },
   {
     name: "Pro",
     price: "R$ 19,90",
-    description: "Para transformar rotina em progresso.",
+    description: "Para o FinMB transformar rotina em progresso.",
     highlighted: true,
     items: ["Financas ilimitadas", "Rotina e nutricao completas", "FinBot com insights", "Life Score avancado", "Relatorios semanais"],
   },
   {
     name: "Premium",
     price: "R$ 39,90",
-    description: "Para uma experiencia completa e prioritaria.",
+    description: "Para viver o FinMB em uma experiencia completa e prioritaria.",
     highlighted: false,
     items: ["Tudo do Pro", "Analises mais profundas", "Automacoes futuras", "Prioridade em novidades", "Suporte premium"],
   },
@@ -36,7 +36,7 @@ export function Pricing() {
           center
           eyebrow="Planos"
           title="Comece leve. Evolua sem limites."
-          text="Escolha o nivel ideal para organizar sua vida agora e desbloquear mais inteligencia conforme sua rotina cresce."
+          text="Escolha o nivel ideal para usar o FinMB agora e desbloquear mais clareza conforme sua rotina cresce."
         />
         <div className="mt-16 grid gap-4 lg:grid-cols-3">
           {plans.map((plan, index) => (

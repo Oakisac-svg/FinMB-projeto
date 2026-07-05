@@ -26,13 +26,13 @@ export function FinBotPreview() {
             </div>
             <div className="space-y-4 p-5 sm:p-7">
               <Message right text="Quanto economizei este mes?" />
-              <Message text="Voce economizou R$ 420 em comparacao ao mes anterior. O maior ganho veio da reducao em delivery." />
+              <Message text="O FinMB mostra uma economia de R$ 420 em comparacao ao mes anterior. O maior ganho veio da reducao em delivery." />
               <Message right text="Como melhorar meu Life Score?" />
               <div className="max-w-[88%] rounded-3xl rounded-bl-md border border-gold-400/20 bg-gold-400/10 p-4 text-sm leading-7 text-zinc-100">
-                <TypingText text="Plano rapido: limite delivery a 2 pedidos, conclua 4 habitos principais e mova R$ 300 para sua meta de reserva." />
+                <TypingText text="Plano rapido do FinMB: limite delivery a 2 pedidos, conclua 4 habitos principais e mova R$ 300 para sua meta de reserva." />
               </div>
               <div className="mt-6 flex items-center gap-2 rounded-2xl border border-white/10 bg-black/25 px-4 py-3 text-sm text-zinc-500">
-                Pergunte sobre seu dia...
+                Converse com o FinMB sobre seu dia...
                 <Send className="ml-auto size-4 text-gold-300" />
               </div>
             </div>
@@ -41,8 +41,8 @@ export function FinBotPreview() {
         <div className="order-1 lg:order-2">
           <SectionHeading
             eyebrow="FinBot"
-            title="Respostas que entendem sua vida."
-            text="O FinBot cruza padroes que voce dificilmente veria sozinho: gastos, rotina, refeicoes, metas e consistencia diaria."
+            title="O FinMB entende sua vida."
+            text="O FinMB cruza padroes que voce dificilmente veria sozinho: gastos, rotina, refeicoes, metas e consistencia diaria."
           />
           <div className="mt-8 grid gap-3">
             {prompts.map((prompt) => (
