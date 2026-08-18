@@ -11,7 +11,7 @@ const Card = React.forwardRef<
     ref={ref}
     suppressHydrationWarning
     className={cn(
-      "rounded-xl border border-gray-200 bg-white shadow-subtle dark:border-gray-700 dark:bg-gray-900",
+      "rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-950",
       className,
     )}
     {...props}
@@ -64,7 +64,7 @@ const CardDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <p
     ref={ref}
-    className={cn("text-sm text-gray-600 dark:text-gray-400", className)}
+    className={cn("text-sm text-zinc-600 dark:text-zinc-400", className)}
     {...props}
   />
 ));

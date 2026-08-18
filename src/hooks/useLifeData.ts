@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { Habit, LifeTask, Meal } from "@/types";
+import { useAuth } from "@/context/auth";
 
 const defaults = {
   habits: [
@@ -20,21 +21,33 @@ const defaults = {
 };
 
 export function useLifeData() {
+  const { user } = useAuth();
+  const storageKey = user ? `finmb-life-data:${user.id}` : null;
   const [habits, setHabits] = useState<Habit[]>(defaults.habits);
   const [tasks, setTasks] = useState<LifeTask[]>(defaults.tasks);
   const [meals, setMeals] = useState<Meal[]>(defaults.meals);
   const [ready, setReady] = useState(false);
+  const [loadedKey, setLoadedKey] = useState<string | null>(null);
+  if (loadedKey !== storageKey) {
+    setLoadedKey(storageKey);
+    setReady(false);
+    setHabits(defaults.habits);
+    setTasks(defaults.tasks);
+    setMeals(defaults.meals);
+  }
   useEffect(() => {
     const frame = requestAnimationFrame(() => {
-      try {
-        const saved = localStorage.getItem("finmb-life-data");
-        if (saved) { const parsed = JSON.parse(saved); setHabits(parsed.habits ?? defaults.habits); setTasks(parsed.tasks ?? defaults.tasks); setMeals(parsed.meals ?? defaults.meals); }
-      } catch { /* dados padrão mantidos */ }
+      if (storageKey) {
+        try {
+          const saved = localStorage.getItem(storageKey);
+          if (saved) { const parsed = JSON.parse(saved); setHabits(parsed.habits ?? defaults.habits); setTasks(parsed.tasks ?? defaults.tasks); setMeals(parsed.meals ?? defaults.meals); }
+        } catch { /* dados padrão mantidos */ }
+      }
       setReady(true);
     });
     return () => cancelAnimationFrame(frame);
-  }, []);
-  useEffect(() => { if (ready) localStorage.setItem("finmb-life-data", JSON.stringify({ habits, tasks, meals })); }, [habits, tasks, meals, ready]);
+  }, [storageKey]);
+  useEffect(() => { if (ready && storageKey) localStorage.setItem(storageKey, JSON.stringify({ habits, tasks, meals })); }, [habits, tasks, meals, ready, storageKey]);
   const metrics = useMemo(() => {
     const completedHabits = habits.filter(h => h.completed).length;
     const completedTasks = tasks.filter(t => t.status === "completed").length;
